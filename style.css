@@ -78,9 +78,15 @@ h2 {
 }
 
 .skill-list div {
-    background: white;
+    background: linear-gradient(135deg, #a855f7, #d946ef);
+    color: white;
     padding: 18px 28px;
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 25px rgba(168, 85, 247, 0.3);
     font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.skill-list div:hover {
+    transform: translateY(-5px);
 }
