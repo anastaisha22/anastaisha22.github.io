@@ -90,3 +90,27 @@ h2 {
 .skill-list div:hover {
     transform: translateY(-5px);
 }
+.moon-logo {
+    font-size: 80px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.project-card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.project-card a {
+    display: inline-block;
+    margin-top: 15px;
+    background: linear-gradient(135deg, #a855f7, #d946ef);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: bold;
+}
