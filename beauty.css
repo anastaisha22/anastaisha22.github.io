@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8fc;
+    color: #444;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 10%;
+    background: white;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #d85fa8;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin-left: 25px;
+    color: #666;
+    font-weight: bold;
+}
+
+.beauty-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    gap: 50px;
+}
+
+.beauty-text {
+    flex: 1;
+}
+
+.small-title {
+    color: #d85fa8;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.beauty-text h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+    color: #222;
+}
+
+.beauty-text p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.beauty-image {
+    flex: 1;
+}
+
+.beauty-image img {
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.main-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 16px 30px;
+    background: linear-gradient(135deg,#ff7dc8,#d85fa8);
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    font-weight: bold;
+}
+
+.about-beauty,
+.services-section,
+.prices-section,
+.contact-section {
+    padding: 90px 10%;
+    text-align: center;
+}
+
+.about-beauty h2,
+.services-section h2,
+.prices-section h2,
+.contact-section h2 {
+    font-size: 42px;
+    margin-bottom: 25px;
+    color: #d85fa8;
+}
+
+.service-cards {
+    display: flex;
+    gap: 25px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+    flex: 1;
+}
+
+.service-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.service-card h3 {
+    margin-top: 20px;
+}
+
+.service-card p {
+    padding: 20px;
+}
+
+.price-list {
+    max-width: 700px;
+    margin: auto;
+}
+
+.price-list div {
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+}
+
+.contact-section {
+    background: linear-gradient(135deg,#ffe3f3,#fff5fb);
+}
+
+@media (max-width: 900px) {
+
+    .beauty-hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-cards {
+        flex-direction: column;
+    }
+
+    .beauty-text h1 {
+        font-size: 40px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

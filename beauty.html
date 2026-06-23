@@ -4,64 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beauty Studio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="beauty.css">
 </head>
 
 <body>
 
-<section class="hero">
-    <div class="card">
+<header class="navbar">
+    <div class="logo">Beauty Studio</div>
 
-        <div class="moon-logo">💄</div>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#prices">Prices</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
 
-        <h1>Beauty Studio</h1>
-
-        <p class="subtitle">
-            Lash • Brows • Makeup
-        </p>
-
+<section class="beauty-hero">
+    <div class="beauty-text">
+        <p class="small-title">Premium Beauty Services</p>
+        <h1>Feel beautiful, confident and cared for</h1>
         <p>
-            Enhancing your natural beauty with professional care and modern techniques.
+            Professional lashes, brows and makeup services designed to highlight your natural beauty.
         </p>
+        <a class="main-btn" href="#contact">Book an Appointment</a>
+    </div>
 
-        <div class="buttons">
-            <a href="#">Book Now</a>
-            <a href="#">Instagram</a>
-        </div>
-
+    <div class="beauty-image">
+        <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?auto=format&fit=crop&w=900&q=80" alt="Beauty makeup products">
     </div>
 </section>
 
-<section class="about">
-    <h2>About Us</h2>
-
+<section class="about-beauty">
+    <h2>About Our Studio</h2>
     <p>
-        We help our clients feel confident and beautiful every day.
-        Our studio specializes in lashes, brows, and professional makeup.
+        We create soft, elegant and modern beauty looks for women who want to feel confident every day.
+        Our focus is comfort, clean work and beautiful results.
     </p>
 </section>
 
-<section class="services">
-    <h2>Services</h2>
+<section class="services-section" id="services">
+    <h2>Our Services</h2>
 
-    <div class="skill-list">
-        <div>Lash Extensions - $40</div>
-        <div>Brow Styling - $25</div>
-        <div>Makeup - $35</div>
-        <div>Beauty Consultation - Free</div>
+    <div class="service-cards">
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=700&q=80" alt="Makeup service">
+            <h3>Makeup</h3>
+            <p>Soft glam, evening makeup and natural beauty looks.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?auto=format&fit=crop&w=700&q=80" alt="Nails beauty service">
+            <h3>Brows</h3>
+            <p>Brow styling, shaping and tinting for a clean elegant look.</p>
+        </div>
+
+        <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1583001931096-959e9a1a6223?auto=format&fit=crop&w=700&q=80" alt="Beauty salon">
+            <h3>Lashes</h3>
+            <p>Natural and volume lash extensions for every style.</p>
+        </div>
     </div>
 </section>
 
-<section class="projects">
-    <h2>Gallery</h2>
+<section class="prices-section" id="prices">
+    <h2>Price List</h2>
 
-    <div class="project-card">
-       <h3>✨ Premium Lash Extensions</h3>
+    <div class="price-list">
+        <div>
+            <span>Lash Extensions</span>
+            <strong>$40</strong>
+        </div>
 
-        <p>
-           Professional lash extensions with a natural and elegant finish.
-        </p>
+        <div>
+            <span>Brow Styling</span>
+            <strong>$20</strong>
+        </div>
+
+        <div>
+            <span>Makeup</span>
+            <strong>$35</strong>
+        </div>
+
+        <div>
+            <span>Beauty Consultation</span>
+            <strong>Free</strong>
+        </div>
     </div>
+</section>
+
+<section class="contact-section" id="contact">
+    <h2>Ready to book?</h2>
+    <p>Contact us on Instagram and choose your perfect beauty service.</p>
+    <a class="main-btn" href="#">Book on Instagram</a>
 </section>
 
 </body>
