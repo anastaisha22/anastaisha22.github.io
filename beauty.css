@@ -188,7 +188,8 @@ body {
     color: #d85fa8;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 900px) 
+{
 
     .beauty-hero {
         flex-direction: column;
