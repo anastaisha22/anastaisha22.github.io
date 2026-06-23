@@ -82,6 +82,12 @@ body {
     text-decoration: none;
     border-radius: 40px;
     font-weight: bold;
+    transition: 0.3s;
+}
+
+.main-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 30px rgba(216, 95, 168, 0.35);
 }
 
 .about-beauty,
@@ -113,6 +119,12 @@ body {
     overflow: hidden;
     box-shadow: 0 15px 35px rgba(0,0,0,0.08);
     flex: 1;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 45px rgba(216, 95, 168, 0.25);
 }
 
 .service-card img {
