@@ -22,9 +22,19 @@ body {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 28px;
+    font-weight: 700;
     color: #d85fa8;
+
+    letter-spacing: 1px;
+}
+
+.logo-icon {
+    font-size: 32px;
 }
 
 .navbar a {
