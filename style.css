@@ -114,3 +114,43 @@ h2 {
     text-decoration: none;
     font-weight: bold;
 }
+
+.hero {
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #1e1b4b 0%, #0f172a 45%, #020617 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.card {
+    max-width: 520px;
+    padding: 65px 50px;
+    border-radius: 24px;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+}
+
+h1 {
+    color: #0f172a;
+    font-size: 48px;
+}
+
+.subtitle {
+    color: #64748b;
+    font-weight: 700;
+}
+
+.card p {
+    color: #475569;
+    line-height: 1.7;
+}
+
+.buttons a {
+    background: #7c3aed;
+    border-radius: 30px;
+}
+
+.buttons a:nth-child(2) {
+    background: transparent;
+    color: #7c3aed;
+    border: 2px solid #7c3aed;
+}
