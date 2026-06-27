@@ -1,74 +1,287 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Moon | Web Developer</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Anastasiia — Web Developer</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #f5f4f8;
+      color: #1a1a2e;
+      min-height: 100vh;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    /* HERO */
+    .hero {
+      border-radius: 20px;
+      padding: 3.5rem 2rem;
+      text-align: center;
+      background: linear-gradient(135deg, #4A3FB5 0%, #D4537E 100%);
+      margin-bottom: 1.5rem;
+    }
+
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.22);
+      border: 3px solid rgba(255,255,255,0.45);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      font-weight: 500;
+      color: white;
+      margin: 0 auto 1rem;
+    }
+
+    .hero h1 {
+      font-size: 28px;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 6px;
+    }
+
+    .hero .sub {
+      font-size: 15px;
+      color: rgba(255,255,255,0.88);
+      margin-bottom: 6px;
+    }
+
+    .hero .loc {
+      font-size: 13px;
+      color: rgba(255,255,255,0.7);
+      margin-bottom: 1.4rem;
+    }
+
+    .tags {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .tag {
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 20px;
+      padding: 5px 16px;
+      font-size: 13px;
+      color: white;
+    }
+
+    /* SECTIONS */
+    .section {
+      background: #ffffff;
+      border-radius: 16px;
+      padding: 1.5rem;
+      margin-bottom: 1.2rem;
+      border: 1px solid #e8e6f0;
+    }
+
+    .sec-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: #1a1a2e;
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .sec-title span {
+      font-size: 18px;
+    }
+
+    /* ABOUT */
+    .about-text {
+      font-size: 14px;
+      color: #555;
+      line-height: 1.75;
+      border-left: 3px solid #4A3FB5;
+      padding-left: 1rem;
+    }
+
+    /* SERVICES */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 12px;
+    }
+
+    .card {
+      background: #f9f8fe;
+      border: 1px solid #e8e6f0;
+      border-radius: 12px;
+      padding: 1rem;
+    }
+
+    .card-ico {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10px;
+      font-size: 22px;
+    }
+
+    .card h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1a1a2e;
+      margin-bottom: 4px;
+    }
+
+    .card p {
+      font-size: 12px;
+      color: #777;
+      line-height: 1.5;
+    }
+
+    /* SKILLS */
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .skill {
+      background: #E0DEFC;
+      color: #26215C;
+      border-radius: 20px;
+      padding: 6px 16px;
+      font-size: 13px;
+      font-weight: 500;
+    }
+
+    /* CONTACT */
+    .contact-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .contact-inner strong {
+      font-size: 15px;
+      color: #1a1a2e;
+      font-weight: 600;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .contact-inner span {
+      font-size: 13px;
+      color: #888;
+    }
+
+    .btn {
+      background: linear-gradient(135deg, #4A3FB5, #D4537E);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 24px;
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      font-family: inherit;
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .btn:hover {
+      opacity: 0.9;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 480px) {
+      .hero { padding: 2.5rem 1.2rem; }
+      .hero h1 { font-size: 24px; }
+    }
+  </style>
 </head>
 <body>
+  <div class="container">
 
-   <section class="hero">
-    <div class="card">
-        <div class="moon-logo">🌙</div>
-        <h1>Moon Studio</h1>
+    <!-- HERO -->
+    <div class="hero">
+      <div class="avatar">A</div>
+      <h1>Anastasiia</h1>
+      <p class="sub">Web Developer · Freelancer</p>
+      <p class="loc">📍 Ukraine</p>
+      <div class="tags">
+        <span class="tag">💻 HTML / CSS</span>
+        <span class="tag">🖥️ Landing Pages</span>
+        <span class="tag">💜 Open to work</span>
+      </div>
+    </div>
 
-        <p class="subtitle">Modern websites that help businesses grow.</p>
+    <!-- ABOUT -->
+    <div class="section">
+      <div class="sec-title"><span>👤</span> About me</div>
+      <p class="about-text">
+        Hi! I'm Anastasiia, a web developer from Ukraine. I build clean, modern websites that help businesses sell their products and grow online. My goal is simple — to turn your idea into a website that actually works for your business.
+      </p>
+    </div>
 
-        <p>
-            We create clean, responsive websites for small businesses,
-            personal brands, and creative projects.
-        </p>
-
-        <div class="buttons">
-            <a href="#projects">View Projects</a>
-            <a href="#contact">Contact Us</a>
+    <!-- SERVICES -->
+    <div class="section">
+      <div class="sec-title"><span>💼</span> Services</div>
+      <div class="cards">
+        <div class="card">
+          <div class="card-ico" style="background:#E0DEFC;">🖼️</div>
+          <h3>Landing pages</h3>
+          <p>Modern, converting pages for your business</p>
         </div>
-    </div>
-</section>
-
-    <section class="about">
-        <h2>About Me</h2>
-        <p>
-           I create modern and responsive websites using HTML and CSS.
-
-I focus on clean design, user-friendly layouts, and continuous learning to improve my skills every day.
-        </p>
-    </section>
-
-    <section class="skills">
-        <h2>My Skills</h2>
-        <div class="skill-list">
-            <div>HTML</div>
-            <div>CSS</div>
-            <div>GitHub</div>
-            <div>Responsive Design</div>
+        <div class="card">
+          <div class="card-ico" style="background:#FBEAF0;">🪪</div>
+          <h3>Business cards</h3>
+          <p>Stylish online presence for professionals</p>
         </div>
-    </section>
-<section class="services">
-    <h2>Services</h2>
-
-    <div class="skill-list">
-        <div>Landing Pages</div>
-        <div>Portfolio Websites</div>
-        <div>Business Websites</div>
-        <div>Website Updates</div>
+        <div class="card">
+          <div class="card-ico" style="background:#E1F5EE;">📱</div>
+          <h3>Responsive design</h3>
+          <p>Looks great on any screen or device</p>
+        </div>
+      </div>
     </div>
-</section>
-   <section class="projects">
-    <h2>My Projects</h2>
 
-    <div class="project-card">
-        <h3>🌙 Moon Portfolio Website</h3>
-
-        <p>
-            My first published portfolio website built with HTML and CSS.
-        </p>
-
-        <a href="https://anastaisha22.github.io" target="_blank">
-            View Project
-        </a>
+    <!-- SKILLS -->
+    <div class="section">
+      <div class="sec-title"><span>🛠️</span> Skills</div>
+      <div class="skills">
+        <span class="skill">HTML5</span>
+        <span class="skill">CSS3</span>
+        <span class="skill">Responsive Layout</span>
+        <span class="skill">VS Code</span>
+        <span class="skill">Clean Code</span>
+      </div>
     </div>
-</section>
 
+    <!-- CONTACT -->
+    <div class="section">
+      <div class="sec-title"><span>✉️</span> Contact</div>
+      <div class="contact-inner">
+        <div>
+          <strong>Ready for new projects!</strong>
+          <span>I reply within 24 hours</span>
+        </div>
+        <a href="mailto:your@email.com" class="btn">Hire me</a>
+      </div>
+    </div>
+
+  </div>
 </body>
 </html>
