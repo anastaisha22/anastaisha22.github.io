@@ -244,6 +244,44 @@ body {
     transform: scale(1.05);
 }
 
+.footer {
+    padding: 70px 10%;
+    text-align: center;
+    background: #222;
+    color: white;
+}
+
+.footer h2 {
+    color: #ff7dc8;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+.footer-links {
+    margin: 25px 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    color: #ff7dc8;
+}
+
+.copyright {
+    font-size: 14px;
+    color: #aaa;
+}
+
 @media (max-width: 900px) 
 {
 
