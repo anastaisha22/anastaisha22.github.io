@@ -154,3 +154,14 @@ h1 {
     color: #7c3aed;
     border: 2px solid #7c3aed;
 }
+body {
+    background: #020617 !important;
+}
+
+.hero {
+    background: radial-gradient(circle at top, #1e1b4b 0%, #0f172a 45%, #020617 100%) !important;
+}
+
+.card {
+    max-width: 520px !important;
+}
