@@ -156,33 +156,121 @@ h1 {
     border: 2px solid #7c3aed;
 }
 body {
-    background: #020617 !important;
+    background: #020617;
 }
 
 .hero {
-    background: radial-gradient(circle at top, #1e1b4b 0%, #0f172a 45%, #020617 100%) !important;
- position: relative;
-}
-
-
-.card {
-    max-width: 430px !important;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(180deg, #0b1020 0%, #141a33 55%, #0b1020 100%);
 }
 
 .hero::before {
-    content: "✦   ✧      ✦        ✧     ✦      ✧";
+    content: "";
     position: absolute;
-    top: 70px;
-    left: 8%;
-    right: 8%;
-    color: white;
+    inset: 0;
+    background-image:
+        radial-gradient(1px 1px at 20px 30px, white 80%, transparent 100%),
+        radial-gradient(1px 1px at 90px 70px, white 80%, transparent 100%),
+        radial-gradient(2px 2px at 140px 120px, white 80%, transparent 100%),
+        radial-gradient(1px 1px at 240px 80px, white 80%, transparent 100%),
+        radial-gradient(1px 1px at 300px 160px, white 80%, transparent 100%);
+    background-size: 320px 220px;
     opacity: 0.75;
-    font-size: 18px;
-    letter-spacing: 55px;
+    z-index: 0;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 260px;
+    background:
+        linear-gradient(135deg, transparent 45%, #111827 46%, #111827 62%, transparent 63%) left bottom / 420px 220px repeat-x,
+        linear-gradient(225deg, transparent 45%, #1e1b4b 46%, #1e1b4b 62%, transparent 63%) left bottom / 520px 250px repeat-x;
+    opacity: 0.85;
     z-index: 1;
 }
 
 .card {
+    width: 520px;
+    max-width: 90%;
+    padding: 55px 50px;
+    border-radius: 24px;
+    background: white;
+    text-align: center;
     position: relative;
     z-index: 2;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+}
+
+.moon-logo {
+    font-size: 64px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h1 {
+    color: #0f172a;
+    font-size: 52px;
+    margin-bottom: 18px;
+}
+
+.subtitle {
+    color: #475569;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 26px;
+}
+
+.card p {
+    color: #475569;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.buttons {
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+    flex-wrap: wrap;
+}
+
+.buttons a {
+    text-decoration: none;
+    background: #7c3aed;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 999px;
+    font-weight: 700;
+    box-shadow: 0 12px 30px rgba(124, 58, 237, 0.35);
+}
+
+.buttons a:nth-child(2) {
+    background: transparent;
+    color: #7c3aed;
+    border: 2px solid #7c3aed;
+    box-shadow: none;
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 40px 25px;
+    }
+
+    h1 {
+        font-size: 38px;
+    }
+
+    .subtitle {
+        font-size: 18px;
+    }
 }
