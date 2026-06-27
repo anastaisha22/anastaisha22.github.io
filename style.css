@@ -161,7 +161,9 @@ body {
 
 .hero {
     background: radial-gradient(circle at top, #1e1b4b 0%, #0f172a 45%, #020617 100%) !important;
+ position: relative;
 }
+
 
 .card {
     max-width: 430px !important;
