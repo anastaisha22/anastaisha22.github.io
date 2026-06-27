@@ -166,3 +166,21 @@ body {
 .card {
     max-width: 430px !important;
 }
+
+.hero::before {
+    content: "✦   ✧      ✦        ✧     ✦      ✧";
+    position: absolute;
+    top: 70px;
+    left: 8%;
+    right: 8%;
+    color: white;
+    opacity: 0.75;
+    font-size: 18px;
+    letter-spacing: 55px;
+    z-index: 1;
+}
+
+.card {
+    position: relative;
+    z-index: 2;
+}
